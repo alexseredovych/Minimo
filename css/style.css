@@ -1,3 +1,7 @@
+body {
+    font-family: 'Playfair Display', serif;
+}
+
 .container {
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
@@ -16,67 +20,55 @@
 }
 
 nav {
-    background-color: aqua;
     grid-area: nav;
 }
 
 #space {
-    background-color: white;
     grid-area: space;
 }
 
 #content1 {
-    background-color: rgb(119, 114, 131);
     grid-area: content1;
 }
 
 #content2 {
-    background-color: bisque;
     grid-area: content2;
 }
 
 #content3 {
-    background-color: rgb(230, 100, 137);
     grid-area: content3;
 }
 
 #content4 {
-    background-color: rgb(115, 104, 186);
     grid-area: content4;
 }
 
 #content5 {
-    background-color: rgb(193, 130, 112);
     grid-area: content5;
 }
 
 #content6 {
-    background-color: rgb(166, 185, 40);
     grid-area: content6;
 }
 
 #content7 {
-    background-color: rgb(6, 182, 120);
     grid-area: content7;
 }
 
 #content8 {
-    background-color: rgb(132, 91, 42);
     grid-area: content8;
 }
 
 #newsletter {
-    background-color: chartreuse;
     grid-area: newsletter;
 }
 
 #load-more {
-    background-color: darksalmon;
+    margin-top: 100px;
     grid-area: load-more;
 }
 
 footer {
-    background-color: darkcyan;
     grid-area: footer;
 }
 
@@ -98,4 +90,84 @@ footer {
         "load-more"
         "footer";
     }
+
+}
+
+
+/* Header & Footer */
+nav, footer {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-list, .footer-list {
+    display: flex;
+    list-style: none;
+}
+
+.header-item, .footer-item {
+    margin: 0 5px 0 5px;
+}
+
+.header-link, .footer-link {
+    text-decoration: none;
+    color: black;
+}
+
+#author-tag {
+    text-align: center;
+}
+
+#logo {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* Column Sections */
+#main-image, .text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1735px;
+    max-height: 900px;
+}
+
+.column-images, .column-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+    max-height: 500px;
+}
+
+#load-more-button {
+    display: block;
+    margin: 0px auto 70px auto;
+    padding: 10px 20px;
+}
+
+/* Newsletter Section  */
+#newsletter {
+    text-align: center;
+    padding: 30px;
+    margin: 50px auto 80px auto;
+}
+
+#email {
+    border: none;
+    border-bottom: 3px solid black;
+    background-color: transparent;
+
+}
+
+#submitBtn {
+    border: none;
+    position: relative;
+    background-color: transparent;
+    top: 5px;
 }
