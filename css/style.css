@@ -1,0 +1,101 @@
+.container {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.5fr 3fr 2fr 2fr 1fr 2fr 1fr 0.5fr;
+    height: 100vh;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "content1 content1 content1 content1"
+        "content2 content2 content3 content3"
+        "content4 content4 content5 content5"
+        "newsletter newsletter newsletter newsletter"
+        "content6 content6 content7 content7"
+        "load-more load-more load-more load-more"
+        "footer footer footer footer";
+    grid-gap: 0.2rem;
+}
+
+nav {
+    background-color: aqua;
+    grid-area: nav;
+}
+
+#space {
+    background-color: white;
+    grid-area: space;
+}
+
+#content1 {
+    background-color: rgb(119, 114, 131);
+    grid-area: content1;
+}
+
+#content2 {
+    background-color: bisque;
+    grid-area: content2;
+}
+
+#content3 {
+    background-color: rgb(230, 100, 137);
+    grid-area: content3;
+}
+
+#content4 {
+    background-color: rgb(115, 104, 186);
+    grid-area: content4;
+}
+
+#content5 {
+    background-color: rgb(193, 130, 112);
+    grid-area: content5;
+}
+
+#content6 {
+    background-color: rgb(166, 185, 40);
+    grid-area: content6;
+}
+
+#content7 {
+    background-color: rgb(6, 182, 120);
+    grid-area: content7;
+}
+
+#content8 {
+    background-color: rgb(132, 91, 42);
+    grid-area: content8;
+}
+
+#newsletter {
+    background-color: chartreuse;
+    grid-area: newsletter;
+}
+
+#load-more {
+    background-color: darksalmon;
+    grid-area: load-more;
+}
+
+footer {
+    background-color: darkcyan;
+    grid-area: footer;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 2fr 1.5fr 1.5fr 1.5fr 1.5fr 0.7fr 1fr 1fr 0.7fr 0.3fr;
+        grid-template-areas: 
+        "nav"
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "content5"
+        "newsletter"
+        "content6"
+        "content7"
+        "load-more"
+        "footer";
+    }
+}
